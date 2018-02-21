@@ -1,0 +1,48 @@
+/* Bootstrap Changes */
+
+.navbar-default {
+	background-color: #dedede;
+}
+
+/* Base Changes */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+.one-half, .one-third, .two-thirds, .one-fourth, .three-fourths, .one-fifth, .two-fifths, .three-fifths, .one-sixth, .four-fifths {
+	border-right: solid 1px #EFEFEF;
+	height: auto;
+}
+
+.one-fourth:last-child {
+	border: none;
+}
+
+.grid-item-inner, .list-item-inner {
+	height: 100%;
+}
+.spanish-message {
+    float: left;
+	margin-top: -20px;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+    color: #fff;
+	padding-left:10px;
+}
+a#LivechatButtonx {
+	float: left;
+	padding-left: 60px;
+	margin-top: -20px;
+}
+.livechat {
+	
+margin-top:-20px;	
+}
+
+.top-nav .phone {
+	font-size:45px;
+	margin-top:20px;
+	margin-left: 75px;
+}

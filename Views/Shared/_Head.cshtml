@@ -1,0 +1,57 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+@* Search appconfigs/settings for 'meta' to set the global page title and other meta tags *@
+@Html.Action(ActionNames.Detail, ControllerNames.MetaTag, new
+{
+	metaTitle = @ViewBag.MetaTitle,
+	metaDescription = @ViewBag.MetaDescription,
+	metaKeywords = @ViewBag.MetaKeywords
+})
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/mpl/padlock-red.png">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900italic,900,700italic,700,600italic,600,400italic,300italic,200italic,200' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" />
+
+@* Bundle and minify jQuery. *@
+@AspDotNetStorefront.Optimization.AdnsfBundler.RenderScriptBundle(
+	bundlePath: "~/scripts/jquery",
+	filePaths: new[]
+	{
+		"~/scripts/jquery.js",
+		"~/scripts/jquery.adnsfalias.js",
+        Url.AppRelativeSkinUrl("scripts/hotjar.americanlocks.js")
+	}
+)
+
+@* Bundle and minify CSS. *@
+@AspDotNetStorefront.Optimization.AdnsfBundler.RenderStyleBundle(
+    bundlePath: Url.SkinUrl("css/bundled"),
+    filePaths: new[]
+    {
+        Url.AppRelativeSkinUrl("css/bootstrap.css"),
+        Url.AppRelativeSkinUrl("css/font-awesome.css"),
+        Url.AppRelativeSkinUrl("css/base.css"),
+        "~/css/GuidedNavigation.css",
+        Url.AppRelativeSkinUrl("css/bootstrap-theme.css"),
+        Url.AppRelativeSkinUrl("css/jquery.sidr.light.css"),
+        Url.AppRelativeSkinUrl("css/main.css"),
+        Url.AppRelativeSkinUrl("css/menugrid.css"),
+        Url.AppRelativeSkinUrl("css/style.css"),
+    }
+)
+
+@*This xmlpackage can be used to add dynamic data to javascripts such as tracking scripts that should run before the closing head tag*@
+@* @Html.XmlPackage("script.headclose") *@
+
+<script>
+						(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+						m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+						})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+						ga('create', 'UA-62150054-1', 'www.americanlocks.com');
+
+						ga('send', 'pageview');
+</script>

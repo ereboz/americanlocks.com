@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+	@Html.Partial("_Head")
+</head>
+<body>
+	@Html.Partial("_BodyOpen")
+
+	<header>
+		<div class="nav-background">
+			<div class="container">
+				<nav class="top-nav">
+					<div class="row">
+						<div class="col-lg-3 col-md-4 top-logo">
+							@Html.Topic("Template.Logo")
+						</div>
+						<div class="col-lg-2 col-md-4">
+							<p class="phone">1-800-778-2217</p>
+						</div>
+						<div class="col-lg-3">
+						
+							<div class="livechat" style="max-width: 100%;">
+                            <a id="LivechatButtonx" href="https://chat.livechatinc.net/licence/1032405/open_chat.cgi?lang=en&amp;groups=0" target="chat_1032405_chat.livechatinc.net" onclick="window.open('https://chat.livechatinc.net/licence/1032405/open_chat.cgi?lang=en&amp;groups=0&amp;'+'dc='+escape(document.cookie+';l='+document.location+';r='+document.referer+';s='+typeof lc_session),'Czat_1032405','width=530,height=520,resizable=yes,scrollbars=no,status=1');return false;"></a>
+                            <script type="text/javascript">
+                                var img = new Image(); img.style.border = '0';
+                                img.src = (("https:" == document.location.protocol) ? "https://" : "http://") + 'chat.livechatinc.net/licence/1032405/button.cgi?lang=en&groups=0' + '&d=' + ((new Date()).getTime());
+                                var _livechat_button = document.getElementById('LivechatButtonx');
+                                if (_livechat_button != null) { _livechat_button.appendChild(img); }
+                            </script>
+							
+                        </div>
+						<div class="spanish-message">
+                        <span>"Se Habla Español"</span>
+                    </div>
+						
+					
+							</div>
+						<div class="col-lg-4">
+							<ul class="shop-links">
+								<li>
+									<a href="@Html.Token("SIGNINOUT_LINK")">
+										@Html.Token("SIGNINOUT_TEXT")
+									</a>
+									<i class="fa fa-sign-in" aria-hidden="true"></i>
+								</li>
+								<li>
+									<a href="/shoppingcart.aspx">
+										@Html.StringResource("responsiveskin.cartcountlabel")
+										(@Html.Token("NUM_CART_ITEMS"))
+										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="@Url.Action("Index", "Account")">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										@Html.StringResource("responsiveskin.accountlabel")
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="nav-background">
+			<div class="container">
+				<nav class='mobile-nav'>
+					<div class="row">
+						<div class="col-sm-6">
+							<a id="simple-menu" href="#sidr"><i class="fa fa-2x fa-bars"></i></a>
+							<a class="top-logo" href="index.html"><img src="/images/al/logo.png"></a>
+						</div>
+						<div class="col-sm-6">
+							<ul class="shop-links">
+								<li>
+									<a href="@Html.Token("SIGNINOUT_LINK")">
+										@Html.Token("SIGNINOUT_TEXT")
+										<i class="fa fa-sign-in" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="shoppingcart.aspx">
+										@Html.StringResource("responsiveskin.cartcountlabel")
+										(@Html.Token("NUM_CART_ITEMS"))
+										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="@Url.Action("Index", "Account")">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										@Html.StringResource("responsiveskin.accountlabel")
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<nav class="product-navbar">
+			<div class="container border-bottom">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 ">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Padlocks <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="@Url.BuildEntityLink("Category", 13, "Standard Combination Padlocks")">Combination Locks</a></li>
+								<li><a href="@Url.BuildEntityLink("Category", 16, "Hidden Shackle Padlocks")">Hidden Shackle Padlocks</a></li>
+								<li><a href="@Url.BuildEntityLink("Category", 7, "Shrouded Shackle Padlocks")">Shrouded Shackle Padlocks</a></li>
+								<li><a href="@Url.BuildEntityLink("Category", 3, "Solid Body Padlocks")">Solid Body Padlocks</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="@Url.BuildEntityLink("Category", 32, "Cam Locks")">Cam Locks</a>
+						</li>
+						<li class="dropdown">
+							<a href="@Url.BuildEntityLink("Category", 17, "Hasps")">HASPS</a>
+						</li>
+						<li class="dropdown">
+							<a href="@Url.BuildEntityLink("Category", 6, "Safety Lockout Padlocks")">SAFETY LOCKOUT PADLOCKS</a>
+						</li>
+                        <li>
+                            <!--
+                                <a href="//buildalock.com/KeyGenerator.aspx" target="_blank">
+                                   <img src="/images/hpi/match-your-key-number.png" />
+                                </a>
+                            -->
+
+                            @Html.Partial("~/Views/HPI/MatchYourKeyNumber.cshtml")
+                        </li>
+					</ul>
+					<div class="nav navbar-nav navbar-right">
+						<div class="form-group">
+							@Html.Partial("_Search")
+						</div>
+					</div>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+		
+<meta name="google-site-verification" content="yVPq0pV9wnR7zWxe4g0W_Tzu1mJmouZJSx_RWCSIMh0" />
+	</header>
+
+	<div class="notices">
+		@Html.Action(ActionNames.Index, ControllerNames.Notice)
+	</div>
+
+	@*
+		<div class="breadcrumb">
+			@Html.Action(
+				actionName: "Detail",
+				controllerName: "Breadcrumb",
+				routeValues: new
+				{
+					PageTitle = ViewBag.PageTitle,
+					PathInfo = ViewBag.PathInfo
+				})
+		</div>
+	*@
+
+	<div>
+		<div class="container">
+            <!-- CONTENTS START -->
+			@RenderBody()
+		<!-- CONTENTS END -->
+		</div>
+    </div>
+
+	<footer>
+		<div class="container footer">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="row">
+						<img class="img-responsive footer-logo" src="/images/al/logo.png" alt="AmericanLocks.com">
+						<h4 class="footer-phone">1-800-778-2217</h4>
+					</div>
+					<div class="row">
+						<ul class="credit-cards">
+							<li><img src="/images/al/ae.svg"></li>
+							<li><img src="/images/al/dc.svg"></li>
+							<li><img src="/images/al/mc.svg"></li>
+							<li><img src="/images/al/visa.svg"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="row">
+						<div class="col-md-3">
+							<h3>Top Links</h3>
+							<ul class="footer-links">
+								<li><a href="@Url.BuildEntityLink("Category", 6, "Safety Lockout Padlocks")">Safety Lockout </a></li>
+								<li><a href="@Url.BuildEntityLink("Category", 3, "Solid Body Padlocks")">Solid Body Padlocks</a></li>
+								<li><a href="@Url.BuildEntityLink("Category", 13, "Standard Combination Padlocks")">Combination Locks</a></li>
+								<li><a href="@Url.BuildEntityLink("Category", 17, "Hasps")">Hasps</a></li>
+								<li><a href="@Url.BuildEntityLink("Category", 32, "Cam Locks")">Cam Locks</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h3>Resources</h3>
+							<ul class="footer-links">
+								<li><a href="@Url.BuildTopicLink("About")">About Us</a></li>
+								<li><a href="@Url.BuildTopicLink("Returns")">Returns</a></li>
+								<li><a href="@Url.BuildTopicLink("Privacy")">Privacy Policy</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h3>Support</h3>
+							<ul class="footer-links">
+								<li><a href="/contactus">Contact Us</a></li>
+								<li><a href="http://www.lockcharts.com">LockCharts</a></li>
+								<li><a href="http://www.buildalock.com">Build-a-Lock</a></li>
+								<li><a href="http://www.masterlocks.com">Masterlocks</a></li>
+								<li><a href="@Url.Action("Index", "Account")">My Account</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h3>Sign-up & Save</h3>
+							<p>Sign up for exclusive alerts on special deals, new products and coupons.</p>
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Sign me up!">
+								</div>
+								<button type="submit" class="button">Submit</button>
+							</form>
+							<ul class="social-links">
+								<li><a href="http://www.facebook.com/thelockpeople"><img src="/images/al/facebook.png" alt="FB"></a></li>
+								<li><a href="http://www.instagram.com/thelockpeople"><img src="/images/al/instagram.jpg" alt="Insta"></a></li>
+								<li><a href="http://www.twitter.com/thelockpeople"><img src="/images/al/twitter.png" alt="tw"></a></li>
+								<li><a href="http://www.wordpress.com/thelockpeople"><img src="/images/al/wordpress.png" alt="wp"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer-box">
+				<p>Didn’t you find what you were looking for? Call us and we will help
+				you get what you need!<br> 1.800.778.2217</p>
+			</div>
+			<div class="row secure-keys">
+				<p>&copy; Copyright Americanlocks.com 1997-2017.</p>
+			</div>
+		</div>
+	</footer>
+
+    <!-- Minicart modal -->
+    @Html.Action(ActionNames.Index, ControllerNames.Minicart, new { cartType = CartTypeEnum.ShoppingCart })
+
+    <!-- Miniwish modal -->
+    @Html.Action(ActionNames.Index, ControllerNames.Minicart, new { cartType = CartTypeEnum.WishCart })
+
+    <!-- Minicart and miniwish resources (javascript and overlay html) -->
+    @Html.Action(ActionNames.MinicartResources, ControllerNames.Minicart)
+
+    <script src="jscripts/jssor.slider.mini.js" type="text/javascript"></script>
+    <script src="jscripts/slideroptions.js" type="text/javascript"></script>
+
+	@Html.Partial("_BodyClose")
+</body>
+</html>

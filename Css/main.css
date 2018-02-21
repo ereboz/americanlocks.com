@@ -1,0 +1,489 @@
+
+
+/* ==========================================================================
+   custom styles
+   ========================================================================== */
+
+/*=================GLOBAL STYLES ====================*/
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8, h9 {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+}
+
+p {font-family: "open-sans", sans-serif;}
+
+a {text-decoration: none;}
+
+.button  {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family: "Oswald", sans-serif;
+    background-color: #C1272D;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #931111;
+}
+
+.buttons {text-align: center;}
+
+.body-container 
+{
+    width:100%;
+}
+/*===================================NAVIGATION BAR/Header ==============================*/
+header  {
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    z-index: 9999;
+}
+.nav-background {background-color: #2b2a2a;}
+.top-logo img {width:375px;line-height: 75px; margin-top:20px;}
+.shop-links ul {line-height: 60px;}
+.shop-links li {text-decoration: none; display: inline-block; float: right; color: #fff; margin-left: 15px;}
+.shop-links a {color: #fff; font-family: "Oswald", sans-serif; font-size: 1.8rem; text-transform: uppercase; line-height: 50px; padding: 0;
+ margin: 0; }
+.shop-links i {font-size: 2.4rem; margin-left: 5px;}
+.top-nav .phone {color: #fff; font-family: "Oswald", sans-serif; font-size: 3rem; line-height: 62px; margin: 0; padding: 0; }
+.product-navbar {background-color: #fff!important;}
+.product-navbar a {color: #2b2a2a; font-family: "Open-sans", sans-serif; font-weight: bold; font-size: 1.4rem; text-transform: uppercase;}
+.border-bottom {border-bottom: 1px solid #eae5e5;}
+
+
+/*=======================================HERO AREA =============================*/
+ 
+
+.main-hero-block {
+    background-image: url('/images/al/business-landing-hero.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55.938rem;
+    overflow: auto;
+}
+
+.content {
+    margin-top: 10%!important;
+    width: 60%;
+    padding: 0 0.938rem 1rem 0;
+    margin: 0 auto;
+    min-width: 37.5rem;
+}
+.main-hero-block h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 7rem;
+  
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+}
+
+.main-hero-block p {
+    font-family: "Open-sans", sans-serif;
+    font-weight: bold;
+    font-style: italic; 
+    
+    color: #fff;
+    font-size: 3rem;
+}
+
+.main-hero-block h4 {
+    color: #fff; 
+    font-size: 3rem;
+    padding-top: 20px;
+}
+
+.shop-button{
+    width: 20rem;
+    background-color: #C1272D;
+    border-color: #C1272D;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 3rem;
+}
+.shop-button:hover {
+    background-color: #931111;
+}
+.shop-button a {color: #fff;}
+.shop-button a:hover {color: #fff;}
+
+/*==================================CALL TO ACTION AND FEATURED AREA ===================*/
+.category-image {padding: 10%;}
+
+/*=====================================================================FEATURED PRODUCTS HOME PAGE =================*/
+
+#deals-section {
+    padding: 2% 0 3% 0;
+}
+.home-news-header {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.feaured-item-image-wrap img {
+    padding: 16px;
+    max-width: 100%; 
+}
+
+
+.featured-product {
+    background-image: url('../images/al/featured1.png');
+    background-position: center botom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
+   
+}
+.category-image {
+    width: 100%;
+    padding: 1%;
+}
+.category-image:hover {
+    padding: 0;
+}
+
+.top-category-box {
+    border: 1px solid #ddd;
+    padding-bottom: 3%;
+  
+}
+
+.top-category-box h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5%;
+}
+.top-category-box h3 {
+  
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 18px;
+}
+.bottom h3 {
+    bottom: 40%;
+}
+.hasp {
+    padding-left: 20%;
+}
+.cam {
+    padding-left: 10%;
+}
+.top-category-box h3:hover {
+    color: #C1272D;
+}
+.top-category-box a:hover {
+    text-decoration: none;
+}
+
+
+ 
+.featured-product h2, h4 {
+    text-align: center;
+    color: #2e3192;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.featured-product h2 {
+    font-size: 4rem;
+    font-family: "Oswald", sans-serif;
+    background-color: #fff;
+    width: 92%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.featured-product h4 {
+    font-family: "open-sans", sans-serif;
+    font-size: 2.5rem;
+    
+}
+
+#featured .buttons {
+    padding-bottom: 5%;
+}
+.featured-product p {font-size: 18px; font-family: "Open-sans", sans-serif; padding: 0; margin: 0; }
+.blue-button {background-color: #2e3192; width: 12rem; text-align: center; margin-left: 16px; margin-top: 20px; text-transform: uppercase;}
+.blue-button:hover {color: #fff; background-color: cornflowerblue; }
+
+
+.feaured-item-name-wrap a{ font-family: "Oswald", sans-serif; color: #2b2a2a; text-transform: uppercase; font-size: 2rem;}
+
+#featured {text-align: center;}
+
+
+
+.regular-price {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.regular-price span {
+    text-decoration: underline, transparent;
+    font-family: "Oswald";
+    font-style: bold;
+    }
+ 
+ .sale-price {
+     font-family: "Oswald";
+     font-size: 2.456rem;
+     font-weight: bold;
+     color: red;
+ }
+ .feaured-item {
+     padding-bottom: 3rem;
+      width: 23%;
+        float: left;
+ }
+ #featured-al-products {
+     text-align: center;
+     padding-top: 2%;
+ }
+ 
+ /*======================================USE CATEGORIES ==========================*/
+ #search-by-use {
+    
+     text-align: center;
+     background-color: #fcfcfc;
+     padding-bottom: 2%;
+ }
+ 
+
+ #search-by-use h2 {text-align: center; text-transform: uppercase; font-size: 4rem; padding-bottom: 20px;}
+ 
+ #search-by-use img {width: 100%; margin: 0; padding: 0; border-radius: 4px;}
+ #search-by-use .row {padding-bottom: 20px;}
+ 
+ 
+ /*==============================================================FOOTER=========================*/
+ footer {background-color: #2b2a2a; color: #fff; margin-top: 25px;}
+ .footer-logo {width: 100%;}
+ .footer-phone {text-align: center; font-size: 5rem; color: #fff;}
+ .footer-search {text-align: center!important; margin-left: auto; margin-right: auto;}
+
+.footer h3 {text-transform: uppercase;}
+.footer li a {font-weight: 300;}
+.footer li a:hover {font-weight: 600;}
+ .footer-form {
+    
+    padding: 10px 15px;
+    margin-top: 8px;
+    margin-right: -15px;
+    margin-bottom: 8px;
+    margin-left: -15px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.1);
+}
+
+.footer-form .form-group {
+    display: inline-block;
+    width: 60%;
+    margin-left: 10%;
+}
+
+.footer-search-button {margin-top: -56px;}
+
+.footer li {
+    list-style: none;
+    font-family: "open-sans";
+    font-size: 3rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff; 
+    font-family: "Oswald";
+    font-size: 18px;
+}
+
+footer .button {
+    width: 100%;
+}
+
+.credit-cards {text-align: center;}
+.credit-cards li {
+    display: inline-block;
+}
+
+.credit-cards img {width: 60px; margin-left: 30px;}
+
+.am-sign-up input {width: 70%; margin: 0; padding: 0; float: left;}
+
+.social-links {text-align: center; padding-top: 10px;}
+.social-links li {display: inline-block;}
+
+.footer-box {width: 98%; text-align: center; margin-left: auto; margin-right: auto; border: 2px solid #8AD0E4; margin-top: 1%; padding: 2%;}
+.footer-box {font-family: "Open-sans", sans-serif; color: #fff; font-size: 2.6rem; font-weight: 300;}
+
+.secure-keys p {text-align: center;}
+
+.button-close {color: #000; font-weight: bold; padding: 0% 4%; margin-left: 75%; font-size: 2rem; border: 1px solid #000; margin-top: 10px;}
+
+
+@media all and (max-width: 1160px){
+    .featured-item{
+        width: 23%!important;
+        float: left;
+    }
+    #hero {
+        min-height: 500px;
+        padding-top: 20%;
+        margin-top: 0;
+    }
+    #hero h1 {
+        font-size: 4rem;
+    }
+}
+@media all and (max-width: 600px){
+    #hero {
+        min-height: 600px;
+        padding-top: 30%;
+        margin-top: 0;
+    }
+    h2, h3, h4, p, .price, .feaured-item-name-wrap a {font-size: 1rem;}
+}
+
+@media all and (min-width: 960px){
+    .mobile-nav {
+        display: none;
+        margin-left: -20px;
+    }
+}
+
+@media all and (max-width: 959px){
+    .top-nav {
+        display: none;
+    }
+}
+
+
+#search-by-use a {
+    text-transform: uppercase;
+    color: #2b2a2a
+}
+#search-by-use a:hover {
+    color: #2e3192;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.search-go {
+    background-image: none!important;
+    color: #fff;
+    background-color: #C1272D!important;
+}
+
+.navbar-right .form-group 
+{
+    float:left !important;
+}
+.home-featured-products {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.form-group {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.top-nav {
+    line-height: 60px;
+}
+
+a#logo.logo img{
+    margin: 0;
+    padding-top: 15px;
+    
+    
+    
+}
+#ctl00_Search2_SearchButton {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+select {
+    max-width: 200px;
+}
+
+.add-to-cart-buttons,
+.add-to-cart-selectors,
+.add-to-cart-quantity {
+    line-height: 60px;
+}
+
+
+/*===========================ABOUT US =======================*/
+.about {
+    padding: 5% 0;
+}
+
+.about h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3.4rem;
+}
+
+.about p {
+    max-width: 1100px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.returns {
+    padding: 5%;
+    font-size: 16px;
+}
+
+.info {
+    padding-top: 0;
+    margin-top: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+}
